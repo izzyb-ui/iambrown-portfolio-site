@@ -49,10 +49,41 @@ already created and empty, ready for your files.
 
 ## Hosting it for real
 
-This is a static site, so any of these work with zero configuration:
-Netlify, Vercel, GitHub Pages, Cloudflare Pages. Drag the whole folder
-in, or connect a repo — either way it's live in a couple of minutes.
-If you want, I can walk you through deploying it once you pick one.
+This site is live on GitHub Pages, free, with no build step and nothing
+to pay for:
+
+**Live site:** https://izzyb-ui.github.io/iambrown-portfolio-site/
+**Repo:** https://github.com/izzyb-ui/iambrown-portfolio-site
+
+## How to update this site
+
+The live site is served straight from the `main` branch of this repo —
+any change pushed to `main` goes live automatically within a minute or
+two. There are two ways to make a change:
+
+**A) Edit directly in the browser (no software needed)**
+
+1. Go to the repo on github.com and open the file you want to change
+   (e.g. `index.html`).
+2. Click the pencil icon (top right of the file view) to edit it.
+3. Make your changes, scroll down, and click **Commit changes**.
+4. That's it — GitHub Pages rebuilds automatically and the live site
+   updates within a minute or two.
+
+**B) Edit locally and push with git**
+
+1. Make your edits to the files on your computer.
+2. From inside the project folder, run:
+   ```
+   git add .
+   git commit -m "describe your change"
+   git push
+   ```
+3. The push triggers the same automatic rebuild — live within a
+   minute or two.
+
+Either way, there's no build step, no framework, and no service to
+configure — it's still just plain HTML/CSS/JS being served as-is.
 
 ## Design notes
 
